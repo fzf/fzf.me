@@ -9,20 +9,38 @@
     %meta{'http-equiv'=>"Content-Language", :content=>"en-us"}/
     %link{:href=>"/stylesheets/screen.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}/
   %body
-    .navbar.navbar-fixed-top
+    .navbar
       .navbar-inner
-        .container
-          = 
+        .span1.offset11
+          %a.home{href: '/', class: 'pull-right'}
+            %image.home-logo{src: '/images/fzf-logo-white.png'}
     .container.top
       - row do
-        - span4 do
+        - span3 do
           .logo
-            = image '/images/fzf-logo-white.png'
-        - span8 do
+          %image.img-circle.logo{src: '/images/avatar.png'}
+        - span9 do
           .info
             %h1 Fletcher Zamboni Fowler
-      / - row do
-      /   - span3 do
-      /     = yield
-      /   - span5 :offset => 4 do
-      /     %p hello world
+          .phone
+            %a{href: 'tel:2023805554'}
+              202-380-5554
+          .email
+            %a{href: 'mailto:fletch@fzf.me'}
+              fletch@fzf.me
+          .skills
+            Ruby on Rails, iOS, JavaScript
+          %ul.social.inline
+            %li
+              %a{href: 'https://github.com/fzf'}
+                %image.github{src: '/images/github.png'}
+            %li
+              %a{href: 'https://twitter.com/fzf'}
+                %image.github{src: '/images/twitter.png'}
+            %li
+              %a{href: 'https://linkedin.com/in/fzfowler'}
+                %image.github{src: '/images/linkedin.png'}
+            %li
+              %a{href: 'http://myskype.info/fzfowler'}
+                %image.github{src: '/images/skype.png'}
+

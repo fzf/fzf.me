@@ -31,7 +31,7 @@ get '/' do
 end
 
 helpers do
-  def img_tag(name)
+  def img(name)
     "<img src='images/#{name}' alt='#{name}' />"
   end
 

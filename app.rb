@@ -3,7 +3,6 @@ require 'compass' #must be loaded before sinatra
 require 'sinatra'
 require 'sinatra/twitter-bootstrap'
 require 'haml'    #must be loaded after sinatra
-require 'pry'
 
 
 # set sinatra's variables
